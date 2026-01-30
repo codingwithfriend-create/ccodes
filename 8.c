@@ -3,11 +3,14 @@ int main()
 {
     int a;
     scanf("%d",&a);
-    if(a>20)
+    if(!printf(""))
     {
         printf("f");
     }
+    else
+    {
     printf("g");
     printf("h");
+}
     return 0;
 }
