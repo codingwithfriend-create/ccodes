@@ -1,5 +1,7 @@
 // // Q1
 #include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
 int main()
 // {
 // int s ,s2;
@@ -27,5 +29,77 @@ int main()
 
 //Q3
 {
-    
+    int a;
+    while(1){
+    printf("=======================================\n");
+    printf("   menu program     \n");
+    printf("=======================================\n");
+    printf(" Commands: \n");
+    printf(" 1.factorial\n");
+    printf(" 2. prime no. or not\n");
+    printf(" 3. odd or even\n");
+    printf(" 4. exit\n");
+    printf("---------------------------------------\n");
+    scanf("%d",&a);
+    switch(a)
+    {
+        case 1:
+        printf("enter a no.");
+        int a;
+        int b=1;
+        scanf("%d",&a);
+        if (a==0)
+        printf("the facorial is 1");
+        for(int i=1;i<=a;i++)
+    {
+            b=b*a;
+            a=a-1;
+            
+    }
+    printf("the factorial is:%d",b);
+    break;
+        case 2:
+        int n, i, isPrime = 1;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+
+    if (n <= 1) {
+        isPrime = 0;
+    } else {
+
+        for (i = 2; i <= sqrt(n); i++) {
+            if (n % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+    }
+
+        if (isPrime)
+        printf("%d is a prime number.\n", n);
+        else
+        printf("%d is not a prime number.\n", n);
+        break;
+        case 3:
+        printf("enter a no.");
+        int f;
+        scanf("%d",&f);
+        if(f%2==0)
+        printf("even no.");
+        else if(f%2==1)
+        printf("odd no");
+        else
+        printf("invalid no.");
+        break;
+        case 4:
+        exit(0);
+        default:
+                printf("Unknown option.\n");
+                break;
+    }
+
+}
+return 0;
 }
