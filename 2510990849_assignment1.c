@@ -1,4 +1,4 @@
-// 1.Print the Sizes of Different Data Types
+ // 1.Print the Sizes of Different Data Types
 #include<stdio.h>
 int main()
 {
