@@ -84,7 +84,7 @@ int main() {
     if (count == 0) {
         printf("0\n");
     } else {
-        printf("%d\n", sum / count);
+        printf("%f\n", (float)sum / count);
     }
 
     return 0;
