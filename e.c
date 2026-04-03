@@ -1,6 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
-int main()
+// int main()
 // {
 //     int i,n;
 //     int *p;
@@ -53,6 +53,9 @@ int main()
 //     printf("%d\n",a);
 //     return 0;
 // }
-{
-    
-}
+// extern int var;
+// int main(void)
+// {
+//     var =10;
+//     return 0;
+// } 
